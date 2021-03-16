@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "description": "Fran's stuff",
   "main": "index.html",
-  "author": "Fran",
+  "author": "André",
   "scripts": {
     "start": "run-p watch watch:styles",
     "build": "run-s clean clean:styles build:styles copy",
