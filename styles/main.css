@@ -1,0 +1,113 @@
+/* @import "../../node_modules/bootstrap/scss/bootstrap";
+ */
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  text-decoration: none;
+  padding: 15px 10px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    justify-content: flex-end;
+    padding-right: 25px;
+  }
+}
+div.hero {
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  height: 300px;
+}
+div.hero h1 {
+  margin-top: 0;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.maintop {
+  padding: 10px;
+}
+.maintop > div {
+  margin-top: 20px;
+  padding: 5%;
+  background-color: #d9e6ae;
+}
+.maintop > div img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .maintop {
+    padding: 10px 10%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .maintop > div {
+    display: flex;
+    padding: 1%;
+  }
+  .maintop > div img {
+    height: 220px;
+    width: 220px;
+    object-fit: cover;
+  }
+  .maintop > div div {
+    padding-left: 15px;
+  }
+  .maintop > div div * {
+    margin: 0 0 10px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .maintop {
+    padding: 10px 0;
+    justify-content: center;
+  }
+  .maintop > div {
+    width: 44%;
+    margin: 1%;
+  }
+}
+.mainbottom {
+  padding: 10px;
+}
+.mainbottom > div {
+  padding: 10px;
+}
+.mainbottom > div:nth-child(odd) {
+  border: solid 1px #d9e6ae;
+}
+
+@media (min-width: 768px) {
+  .mainbottom {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .mainbottom > div:nth-child(1) {
+    grid-column: 1;
+  }
+  .mainbottom > div:nth-child(2) {
+    grid-column: 2;
+  }
+  .mainbottom > div:nth-child(3) {
+    grid-column: 3;
+  }
+}
+footer {
+  margin: 0;
+  background-color: #275a91;
+  display: flex;
+  justify-content: center;
+}
+footer a {
+  color: white;
+  padding: 15px 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
