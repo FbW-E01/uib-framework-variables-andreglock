@@ -9,6 +9,7 @@ nav {
   justify-content: center;
 }
 nav a {
+  color: #016690;
   text-decoration: none;
   padding: 15px 10px;
 }
@@ -34,9 +35,11 @@ div.hero h1 {
   padding: 10px;
 }
 .maintop > div {
+  border: solid 1px #dad6ab;
+  border-radius: 10px;
   margin-top: 20px;
   padding: 5%;
-  background-color: #d9e6ae;
+  background-color: #e0ddb2;
 }
 .maintop > div img {
   width: 100%;
@@ -49,6 +52,7 @@ div.hero h1 {
     flex-wrap: wrap;
   }
   .maintop > div {
+    border: solid 1px solid 1px #dad6ab;
     display: flex;
     padding: 1%;
   }
@@ -81,7 +85,7 @@ div.hero h1 {
   padding: 10px;
 }
 .mainbottom > div:nth-child(odd) {
-  border: solid 1px #d9e6ae;
+  border: solid 1px #dad6ab;
 }
 
 @media (min-width: 768px) {
@@ -101,7 +105,7 @@ div.hero h1 {
 }
 footer {
   margin: 0;
-  background-color: #275a91;
+  background-color: #016690;
   display: flex;
   justify-content: center;
 }
