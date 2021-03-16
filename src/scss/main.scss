@@ -1,8 +1,9 @@
 // This is where you can import other stylesheets or write your scss code
 /* @import "../../node_modules/bootstrap/scss/bootstrap";
  */
-$secondary: #d9e6ae;
-$footer: #275a91;
+$secondary: #e0ddb2;
+$border: solid 1px #dad6ab;
+$footer: #016690;
 
 body {
     margin: 0;
@@ -12,6 +13,7 @@ nav {
     display: flex;
     justify-content: center;
     a {
+        color: $footer;
         text-decoration: none;
         padding: 15px 10px;
     }
@@ -38,6 +40,8 @@ div.hero {
 .maintop {
     padding: 10px;
     > div {
+        border: $border;
+        border-radius: 10px;
         margin-top: 20px;
         padding: 5%;
         img {
@@ -53,6 +57,7 @@ div.hero {
         display: flex;
         flex-wrap: wrap;
         > div {
+            border: solid 1px $border;
             display: flex;
             padding: 1%;
             img {
@@ -88,7 +93,7 @@ div.hero {
     }
 
     >div:nth-child(odd) {
-        border: solid 1px $secondary;
+        border: $border;
     }
 }
 
