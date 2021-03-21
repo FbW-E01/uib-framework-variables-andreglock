@@ -1,2 +1,126 @@
 // This is where you can import other stylesheets or write your scss code
-@import "../../node_modules/bootstrap/scss/bootstrap";
+/* @import "../../node_modules/bootstrap/scss/bootstrap";
+ */
+$secondary: #e0ddb2;
+$border: solid 1px #dad6ab;
+$footer: #016690;
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    a {
+        color: $footer;
+        text-decoration: none;
+        padding: 15px 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    nav {
+        justify-content: flex-end;
+        padding-right: 25px;
+    }
+}
+
+div.hero {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    height: 300px;
+    h1 {
+        margin-top: 0;
+        text-align: center;
+        padding-top: 30px;
+    }
+}
+
+.maintop {
+    padding: 10px;
+    > div {
+        border: $border;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 5%;
+        img {
+            width: 100%;
+        }
+        background-color: $secondary;
+    }
+}
+
+@media (min-width: 768px) {
+    .maintop {
+        padding: 10px 10%;
+        display: flex;
+        flex-wrap: wrap;
+        > div {
+            border: solid 1px $border;
+            display: flex;
+            padding: 1%;
+            img {
+                height: 220px;
+                width: 220px;
+                object-fit: cover;
+            }
+            div {
+                padding-left: 15px;
+                * {
+                    margin: 0 0 10px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .maintop {
+        padding: 10px 0;
+        justify-content: center;
+        > div {
+            width: 44%;
+            margin: 1%;
+        }
+    }
+}
+
+.mainbottom {
+    padding: 10px;
+    >div {
+        padding: 10px;
+    }
+
+    >div:nth-child(odd) {
+        border: $border;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .mainbottom {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        >div:nth-child(1) {
+            grid-column: 1;
+        }
+        >div:nth-child(2) {
+            grid-column: 2;
+        }
+        >div:nth-child(3) {
+            grid-column: 3;
+        }
+    }
+}
+
+footer {
+    margin: 0;
+    background-color: $footer;
+    display: flex;
+    justify-content: center;
+    a {
+        color: white;
+        padding: 15px 10px;
+    }
+}
